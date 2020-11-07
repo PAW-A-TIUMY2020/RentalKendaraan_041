@@ -11,6 +11,7 @@ namespace RentalKendaraan_041.Models
         }
 
         public int IdKondisi { get; set; }
+        [Required(ErrorMessage = "Kondisi tidak boleh kosong")]
         public string NamaKondisi { get; set; }
 
         public ICollection<Pengembalian> Pengembalian { get; set; }
